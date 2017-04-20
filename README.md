@@ -28,6 +28,8 @@ Fritzing diagram needed
 - Optimize to seek bright spaces and charge via a solar panel.
 - Add bluetooth.
 - Connect to an Android App that is also connected to Firebase.
+- Support for more operating systems.
+- Support for more programming languages/IDEs.
 - Optimize for mapping.
 - Communicate with an SPI device.
 - Communicate with an I2C device.

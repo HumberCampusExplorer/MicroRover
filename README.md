@@ -7,7 +7,9 @@ Estimated build time: 3 hours.
 
 ## Table of Contents
 [Bill of Materials](https://github.com/six0four/MicroRover#bill-of-materials-see-excel-file-in-repository)
+
 [Instructions](https://github.com/six0four/MicroRover#instructions)
+
 [Future Development](https://github.com/six0four/MicroRover#future-development)
 
 ## Bill of materials: see Excel file in repository.

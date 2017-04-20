@@ -1,7 +1,20 @@
-Micro Rover https://six0four.github.io/MicroRover/
+#Micro Rover https://six0four.github.io/MicroRover/
 (a Micro Servo based Rover)
 
-Future development:
+Photo: needed
+
+Estimated build time: 3 hours.
+##Bill of materials: see Excel file in repository.
+
+##Instructions:
+
+Start with programming trinket prior to soldering to make sure it works.
+repeat after solering to make sure undamaged
+
+Fritzing diagram needed
+![alt text](https://github.com/six0four/MicroRover/raw/master/src/common/images/fritzing.png "Circuit")
+
+##Future development:
 - Optimize to stay on desk.
 - Optimize to seek dark spaces.
 - Optimize for line following.

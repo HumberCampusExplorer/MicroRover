@@ -1,22 +1,19 @@
-# Micro Rover https://six0four.github.io/MicroRover/
-(a Micro Servo based Rover)
+# Micro Rover
 
 Photo: needed
 
 Estimated build time: 3 hours.
 
 ## Table of Contents
-[Bill of Materials](https://github.com/six0four/MicroRover#bill-of-materials-see-excel-file-in-repository)
+1. [Bill of Materials](https://github.com/six0four/MicroRover#bill-of-materials-see-excel-file-in-repository)
+2. [Instructions](https://github.com/six0four/MicroRover#instructions)
+3. [Future Development](https://github.com/six0four/MicroRover#future-development)
 
-[Instructions](https://github.com/six0four/MicroRover#instructions)
-
-[Future Development](https://github.com/six0four/MicroRover#future-development)
-
-## Bill of materials: see Excel file in repository.
+## 1. Bill of materials: see Excel file in repository.
 
 
 
-## Instructions
+## 2. Instructions
 
 Start with programming trinket prior to soldering to make sure it works.
 repeat after solering to make sure undamaged
@@ -24,7 +21,7 @@ repeat after solering to make sure undamaged
 Fritzing diagram needed
 ![alt text](https://github.com/six0four/MicroRover/raw/master/src/common/images/fritzing.png "Circuit")
 
-## Future development:
+## 3. Future development:
 - Optimize to stay on desk.
 - Optimize to seek dark spaces.
 - Optimize for line following.

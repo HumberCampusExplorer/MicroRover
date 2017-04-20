@@ -1,6 +1,6 @@
 # Micro Rover
 
-Photo: !(https://raw.githubusercontent.com/six0four/MicroRover/master/prototype.jpg)
+Photo: ![Image of Prototype](https://raw.githubusercontent.com/six0four/MicroRover/master/prototype.jpg)
 
 Estimated build time: 3 hours.
 

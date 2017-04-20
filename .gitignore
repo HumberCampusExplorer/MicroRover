@@ -17,6 +17,24 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# https://github.com/github/gitignore/blob/master/Global/MicrosoftOffice.gitignore CC0 1.0 Universal
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
+
 # =========================
 # Operating System Files
 # =========================

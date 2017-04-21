@@ -9,7 +9,7 @@ Adapted from [Rick's Trinket Rover](https://github.com/rwinscot/TrinketRover), e
 4. [Future Development](https://github.com/six0four/MicroRover#4-future-development)
 
 ## 1. Introduction
-The goal of this project is to explore a common low cost microcontroller. A small rover is assembled as the vehicle. Currently the small rover moves forward until an object reflects infrared light which triggers it to reverse and turn before continuing forward again.
+A common introduction to microcontrollers is through the [Lego NXT ROBOTC Curriculum](http://www.education.rec.ri.cmu.edu/previews/robot_c_products/teaching_rc_lego_v2_preview/home/ROBOTC_Curriculum_Outline.pdf). This project aims to use a low cost platform to also explore microcontrollers. Similarly, a small rover is assembled as the vehicle. Currently the small rover moves forward until an object reflects infrared light which triggers it to reverse and turn before continuing forward again.
 
 ## 2. Bill of Materials and Required Tools
 For a list of materials please see the Excel file in the repository.

@@ -23,7 +23,7 @@ Regarding tools, the following are a minimum:
 ## 3. Instructions
 1. Soldering guidance:
 	1. Start off by watching some ahort soldering guidance videos: [NASA Jove Project](https://radiojove.gsfc.nasa.gov/telescope/soldering.htm).
-	2. Continue by watching some [Youtube Videos](https://www.youtube.com/watch?v=BLfXXRfRIzY&list=PLQ32vZrF5U2lFOJTtZDytBWBYVLNp4RYz).
+	2. Continue by watching some [YouTube Videos](https://www.youtube.com/watch?v=BLfXXRfRIzY&list=PLQ32vZrF5U2lFOJTtZDytBWBYVLNp4RYz).
 	3. Be sure to wear safety glasses and consult an expert regarding safety, you can even start at your [local hackerspace](https://wiki.hackerspaces.org/List_of_Hackerspaces).
 2. Start with programming trinket prior to soldering to make sure it works.
 3. Repeat after soldering to make sure trinket undamaged.

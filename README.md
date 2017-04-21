@@ -3,15 +3,15 @@ Adapted from [Rick's Trinket Rover](https://github.com/rwinscot/TrinketRover), e
 ![Image of Prototype](https://raw.githubusercontent.com/six0four/MicroRover/master/images/prototype.jpg)
 
 ## Table of Contents
-1. [Instroduction](https://github.com/six0four/MicroRover#1-instroduction)
-2. [Bill of Materials](https://github.com/six0four/MicroRover#2-bill-of-materials-and-required-tools)
+1. [Introduction](https://github.com/six0four/MicroRover#1-introduction)
+2. [Bill of Materials and Required Tools](https://github.com/six0four/MicroRover#2-bill-of-materials-and-required-tools)
 3. [Instructions](https://github.com/six0four/MicroRover#3-instructions)
 4. [Future Development](https://github.com/six0four/MicroRover#4-future-development)
 
 ## 1. Introduction
 The goal of this project is to explore a common low cost microcontroller. A small rover is assembled as the vehicle. Currently the small rover moves forward until an object reflects infrared light which triggers it to reverse and turn before continuing forward again.
 
-## 2. Bill of materials and required tools
+## 2. Bill of Materials and Required Tools
 For a list of materials please see the Excel file in the repository.
 
 Regarding tools, the following are a minimum:
@@ -31,7 +31,7 @@ Regarding tools, the following are a minimum:
 Fritzing diagrams needed
 ![Circuit](raw.githubusercontent.com/six0four/MicroRover/master/images/circuit.jpg)
 
-## 4. Future development:
+## 4. Future Development:
 - Serial communication http://www.ernstc.dk/arduino/tinycom.html
 - Optimize to stay on desk.
 - Optimize to seek dark spaces.

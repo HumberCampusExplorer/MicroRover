@@ -58,3 +58,4 @@ Fritzing diagrams needed
 - Add MICROCHIP I2C I/O Expander MCP23017.
 - Use with http://www.atmel.com/tools/atatmel-ice.aspx and http://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=ATPOWERDEBUGGER
 - Design shell for injection molding.
+- http://www.instructables.com/id/Optical-Mouse-Odometer-for-Arduino-Robot/?ALLSTEPS

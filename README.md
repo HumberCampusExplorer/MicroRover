@@ -39,22 +39,34 @@ Fritzing diagrams needed
 - Optimize to seek bright spaces and charge via a solar panel.
 - Add bluetooth.
 - Connect to an Android App that is also connected to Firebase.
-- Reflashing, changing, and removing bootloaders.
+- Re-flashing, changing, and removing boot loaders.
 - Support for more operating systems.
 - Support for more programming languages (Atmel AVR Assembly, ANSI C, Java, Python, javascript, etc.).
-- Support for more development environments (Atmel Studio, AVR-GCC/vi|emacs/AVRdude, Visual Studio, etc.).
+- Support for more development environments (AVR-GCC/vi|emacs/AVRdude, Atmel Studio/Visual Studio, etc.).
 - Optimize for mapping.
 - Communicate with an I2C device as a master
 - Communicate with an SPI device.
 - Communicate with an I2C device as a slave.
 - Communicate with a UART device.
-- Communicate via infrared remote codes.
+- Communicate via infra-red remote codes.
 - Add an H-bridge.
-- Modify for DC motors.
-- Modify for stepper motors.
+- Add an opto-coupler.
+- Add a bidirectional level shifter.
+- Modify for DC motors, optical encoders, relays.
+- Modify for stepper motors (bipolar and unipolar).
+- https://thewanderingengineer.com/2014/08/11/pin-change-interrupts-on-attiny85/
+- PID feedback control, fan, thermistor, thermocouple.
+- Function generator.
+- D to A, PWM.
+- A to D, filters.
+- Solar cell, photo-resistor.
+- Wheatstone bridge, instrumentation amplifier.
+- Displays.
+- De-bouncing reed switch.
 - Emulate a keyboard.
 - Playback sound.
 - Create a custom PCB with an integrated USB port.
+- Shift register, multiplexer.
 - Add MICROCHIP I2C I/O Expander MCP23017.
 - Use with http://www.atmel.com/tools/atatmel-ice.aspx and http://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=ATPOWERDEBUGGER
 - Design shell for injection molding.

@@ -72,5 +72,6 @@ Fritzing diagrams needed
 - Use with http://www.atmel.com/tools/atatmel-ice.aspx and http://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=ATPOWERDEBUGGER
 - Design shell for injection molding.
 - Bar/QR code scanners, RFID, magnetic strip, fingerprint readers.
+- Add SJA1000/MCP2515 for CAN.
 - http://perso.uclouvain.be/fstandae/lightweight_ciphers/
 - http://www.instructables.com/id/Optical-Mouse-Odometer-for-Arduino-Robot/?ALLSTEPS

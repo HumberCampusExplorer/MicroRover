@@ -67,7 +67,10 @@ Fritzing diagrams needed
 - Playback sound.
 - Create a custom PCB with an integrated USB port.
 - Shift register, multiplexer.
+- RS232, RS485.
 - Add MICROCHIP I2C I/O Expander MCP23017.
 - Use with http://www.atmel.com/tools/atatmel-ice.aspx and http://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=ATPOWERDEBUGGER
 - Design shell for injection molding.
+- Bar/QR code scanners, RFID, magnetic strip, fingerprint readers.
+- http://perso.uclouvain.be/fstandae/lightweight_ciphers/
 - http://www.instructables.com/id/Optical-Mouse-Odometer-for-Arduino-Robot/?ALLSTEPS

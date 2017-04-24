@@ -32,7 +32,11 @@ Fritzing diagrams needed
 ![Circuit](raw.githubusercontent.com/six0four/MicroRover/master/images/circuit.jpg)
 
 ## 4. Future Development:
-- Serial communication http://www.ernstc.dk/arduino/tinycom.html
+- Incorporate multimeter use to check cell.
+- Incorporate power supply use as a current controlled alternative to lion cell.
+- Incorporate oscilloscope use to view servo motor command signal.
+- Incorporate function generator use to create a test control signals.
+- Serial communication http://www.ernstc.dk/arduino/tinycom.html to view digitization of infra-red sensor.
 - Optimize to stay on desk.
 - Optimize to seek dark spaces.
 - Optimize for line following.

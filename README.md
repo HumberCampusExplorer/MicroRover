@@ -79,3 +79,20 @@ Fritzing diagrams needed
 - Add SJA1000/MCP2515 for CAN.
 - http://perso.uclouvain.be/fstandae/lightweight_ciphers/
 - http://www.instructables.com/id/Optical-Mouse-Odometer-for-Arduino-Robot/?ALLSTEPS
+- Currently the project uses a low cost, low power microcontroller from Microchip (Atmel). It could be expanded to be suitable for offerings from other companies such as:
+	- Broadcom
+	- National Instruments
+	- Philips
+	- Qualcomm (including NXP, Motorola, and Freescale)
+	- Texas Instruments
+	- Xilinx
+	- Altera
+	- Analog Devices
+	- Cypress
+	- Exynos (Samsung)
+	- Infineon Technologies
+	- Nordic Semiconductor
+	- ON Semiconductor (including Fairchild)
+	- Renesas Electronics (including NEC, Hitatchi, Mitsubishi)
+	- SGS-THOMSON Microelectronics
+	- Silicon Labs

@@ -45,7 +45,7 @@ Fritzing diagrams needed
 - Connect to an Android App that is also connected to Firebase.
 - Re-flashing, changing, and removing boot loaders.
 - Support for more operating systems.
-- Support for more programming languages (Atmel AVR Assembly, ANSI C, Java, Python, javascript, etc.).
+- Support for more programming languages (Atmel AVR Assembly, ANSI C, Java, Python, IEC 61131-3, javascript, etc.).
 - Support for more development environments (AVR-GCC/vi|emacs/AVRdude, Atmel Studio/Visual Studio, etc.).
 - Optimize for mapping.
 - Communicate with an I2C device as a master

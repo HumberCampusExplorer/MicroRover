@@ -25,8 +25,19 @@ Regarding tools, the following are a minimum:
 	1. Start off by watching some ahort soldering guidance videos: [NASA Jove Project](https://radiojove.gsfc.nasa.gov/telescope/soldering.htm).
 	2. Continue by watching some [YouTube Videos](https://www.youtube.com/watch?v=BLfXXRfRIzY&list=PLQ32vZrF5U2lFOJTtZDytBWBYVLNp4RYz).
 	3. Be sure to wear safety glasses and consult an expert regarding safety, you can even start at your [local hackerspace](https://wiki.hackerspaces.org/List_of_Hackerspaces).
-2. Start with programming trinket prior to soldering to make sure it works.
-3. Repeat after soldering to make sure trinket undamaged.
+2. Start by programming the trinket with a blink program prior to soldering to make sure it works.
+3. Soldering the headers onto to make sure trinket undamaged.
+4. Upload the blink program to the trinket again to make sure it is undamaged.
+6, Power the trinket from the power supply. Set the current limit.
+4. Test the voltage on the 3.7 V 350 mAh Lithium Ion Polymer 552035 Cell. (Notice from the datasheet that the <a href="https://cdn-shop.adafruit.com/product-files/2750/LP552035_350MAH_3.7V_20150906.pdf">Discharge Cut-off
+is 3.0V, the Charging Cut-off is 4.2V, and the Storage Voltage is 3.7-3.85V</a>)
+7. Turn on the oscilloscope.
+8. Turn on the funtion generator.
+9. Disconnect the power supply and connect the 
+5. Upload the rover code to the trinket.
+6.
+7.
+8.
 
 Fritzing diagrams needed
 ![Circuit](raw.githubusercontent.com/six0four/MicroRover/master/images/circuit.jpg)

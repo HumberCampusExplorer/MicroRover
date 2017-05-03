@@ -72,7 +72,7 @@ Fritzing diagrams needed
 - Create a custom PCB with an integrated USB port.
 - Shift register, multiplexer.
 - RS232, RS485.
-- Add 9-DOF IMU.
+- Add a 9-DOF IMU.
 - Add MICROCHIP I2C I/O Expander MCP23017.
 - Use with http://www.atmel.com/tools/atatmel-ice.aspx and http://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=ATPOWERDEBUGGER
 - Design shell for injection molding.

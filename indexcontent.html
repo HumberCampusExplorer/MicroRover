@@ -4,7 +4,14 @@
  </HEADER>
 
  <SECTION ID="Section_1">
-  <H3>Computer Engineering Technology (CENG) Prototyping Workshop</H3>
+  <H3>9am-12noon May 15th, 2017 Computer Engineering Technology (CENG) Prototyping Workshop in J232</H3>
+  <p>Preparation in advance:<ol>
+   <li>Please get started by ensuring that you have reviewed the <a href="https://radiojove.gsfc.nasa.gov/telescope/soldering.htm">six 15 second soldering videos</a> and can comment on them.</li>
+   <li>Work through as much of this set of instructions as possible. (Feel free to drop by my desk or through the prototype lab in J233 for additional guidance.)</li>
+  </ol></p>
+  <p>Getting started Monday morning:<ol>
+   <li>Please select a seat in J232 near one of the soldering facilitators (Kelly, Vlad, Jeremy, Brandeen, Carl, Leon, Mihyar, Muhammad, or Vincent).</li></ol>
+  </ol></p>
   <p>Welcome! Our students are <a href="http://www.tcu.gov.on.ca/pepg/audiences/colleges/progstan/techno/compeng3.pdf">to reliably demonstrate the ability to</a>:
    <ol><li>diagnose, solve, troubleshoot, and document technical problems involving computing devices using appropriate methodologies.
    </li><li>integrate multiple software and hardware components using appropriate network architecture.
@@ -19,20 +26,19 @@
   <p>The CENG capstone project consists of:<ol>
    <li>CENG317 Hardware Production Technology (building a microprocessor based sensor/effector node),</li>
    <li>CENG 319 Software Project (building a mobile application); and,</li>
-   <li>CENG 355 Computer Systems Project (integration of the work in the previous two courses):</li>
+   <li>CENG 355 Computer Systems Project (integration of the work in the previous two courses):</li></ol>
    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/PiNetworkArchitecture.jpg">
-   </ol>
   </p>
   <p>
    We will aim to make headway in a simplified project by building an independent microcontroller based sensor/effector node that could be intergrated in the following way:
    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/TrinketNetworkArchitecture.jpg">
-   This will give us some idea of what runs our phone, PLC, vehicle system and infotainment, Lego Mindstorms, Arduino, Raspberry Pi as well as learn about the prototyping tools available at Humber.
+   This will give us some idea of what runs our phone, PLCs, connected devices all over including vehicle systems and infotainment, Lego Mindstorms, Arduino, Raspberry Pi as well as learn about the prototyping tools available at Humber.
   </p>
   <p>
    <li>Thanks to our generous students (via lost and found) you have the beginnings of a parts kit - if not, contact me.<ol>
     <li>I will link to a number of draft videos in this workshop guide, in this case it is <a href="https://vimeo.com/100466061">a video that guides the students to purchase a parts kit at the bookstore</a>.</li>
     <li>The first step with the parts kit is to <a href="https://vimeo.com/100450524">put your name on it and check that you have all of the parts</a>.</li>
-    <li>Our next step with the parts kit is to <a href="https://vimeo.com/104403275">confirm our leads are functional</a>.</li>
+    <li>Our next step with the parts kit is to <a href="https://vimeo.com/104403275">confirm that our leads are functional</a>.</li>
     <li>What we notice is that the equipment in J232 is different from <a href="https://vimeo.com/104617858">those shown in the videos</a>.</li>
 	<li>Additional electronics <a href="https://www.youtube.com/watch?v=lV39ffb82iE">background</a> from
 	 <a href="https://www.youtube.com/watch?v=2jAHT80Yw4A">Carl Oliver</a> and 
@@ -47,14 +53,13 @@
 	  <li>One 10 k&#937 resistor (to use to test the leads and test equipment as per the aforementioned videos),</li>
 	  <li>One 100 k&#937 resistor; and,</li>
 	  <li>A 5 cm length of solid core hookup wire.</li>
-	  <li>If the resistors have not been sorted, Kelly can provide laser cut and etched resistor organization cards:</li>
-	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/ResistorLaser.jpg">
-	  
+	  <li>If any parts are missing, they can be borrowed from the parts crib and if the resistors have not been sorted, Kelly can provide laser cut and etched resistor organization cards:</li>
+	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/ResistorLaser.jpg"> 
 	 </ol>
     </li>
    <li>Many of you also have a partial starter kit of parts for the workshop on May 15th to get started during the week prior to the workshop.
    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/EarlyAdopterKit.jpg"> 
-   Hassan, Leon, Mihyar, Brandeen, Jeremy, Muhammad.</li>
+   (e.g. Hassan, Leon, Mihyar, Brandeen, Jeremy, Muhammad.)</li>
    <li>The partial starter kit contains:
     <ol>
 	 <li>One 3.7 V 350 mAh Lithium Ion Polymer 552035 Cell,</li>
@@ -62,7 +67,7 @@
 	 <li>Two BS1806-022 O-rings</li>
 	 <li>Two 3D printed <a href="https://github.com/six0four/MicroRover/blob/master/mechanical/MicroRoverOringWheelRev05.stl">micro servo wheels</a></li>
 	 <li>Two Micro Continuous Rotation Servos, one of which is packaged with:</li>
-	 <li>Six terminal posts,</li>
+	 <li>Six 36-1502-2-ND turret posts,</li>
 	 <li>One 3V Adafruit Trinket, packaged with:</li>
 	 <li>>30 cm of SN 100C 0.032” diameter lead free no clean rosin based glow core flux core of 2.5%.</li>
 	 <li>One 1080-1163-ND Side view IR phototransistor.</li>
@@ -77,7 +82,7 @@
     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/EarlyAdopterContents2.jpg">
     </li>
    </li>
-   <li>Please put on your glasses for safety as we will be soldering and using side cutters. To solder these parts:
+   <li>Please put on your glasses for safety as we will be soldering and using side cutters (despite this please make sure not to send to parts flying from your workspace). To solder these parts:
     <ol>
 	 <li>Take a length of solid core hookup wire (from your student supplied parts kit) and strip two 5 cm lengths of it.</li>
 	 <li>Use pliers to create a bend as shown:</li>
@@ -97,7 +102,7 @@
    </li>
    <li>Soldering headers:
     <ol>
-     <li>Solder the provided headers (use side cutters to cut the headers to the appropriate length making sure not to send to parts flying) onto the trinket.</li>
+     <li>Solder the provided headers onto the trinket.</li>
      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/trinketandheaders.jpg">
      <li>Solder the provided headers onto the trinket backpack.</li>
 	</ol>
@@ -112,15 +117,8 @@
   </ol></p>
  </SECTION>
  
- <SECTION ID="Section_1">
-  <H3>9am-12noon May 15th, 2017 Computer Engineering Technology Workshop in J232</H3>
-  <p>Preparation in advance:<ol>
-   <li>Please get started by ensuring that you have reviewed the <a href="https://radiojove.gsfc.nasa.gov/telescope/soldering.htm">six 15 second soldering videos</a> and can comment on them.
-  </ol></p>
-  <p>Getting started Monday morning:<ol>
-   <li>Please select a seat in J232 near one of the soldering facilitators (Kelly, Vlad, Jeremy, Brandeen, Carl, Leon, Mihyar, Muhammad, or Vincent).</li>
-   <li>From yous part kit find a 10 k&#937 resistor.</li>
-   <li>Following:
+ <SECTION ID="Section_2">
+   <h3>Please let me know that you have made it this far such that I can once again get ahead of you in posting instructions!</h3><p><ol><li>Following:
 https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#This_is_an_ideal_attribution
 
 "Breadboard view graphics" http://fritzing.org/faq/ by Fritzing are licensed under CC BY SA 3.0
@@ -129,7 +127,7 @@ http://creativecommons.org/licenses/by-sa/3.0/</li>
   </ol></p>
  </SECTION>
 
- <SECTION ID="Section_2">
+ <SECTION ID="Section_3">
   <H3>Micro Rover Project</H3>
   <p><ol>
    <li>Please visit the <a href="https://github.com/six0four/MicroRover">Micro Rover Repository</a>.</li>

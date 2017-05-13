@@ -1,199 +1,302 @@
 <ARTICLE ID="Article_1">
+
  <HEADER ID="Header_Article_1">
   <H2>Building IoT Projects</H2>
  </HEADER>
 
  <SECTION ID="Section_1">
   <H3>9am-12noon May 15th, 2017 Computer Engineering Technology (CENG) Prototyping Workshop in J232</H3>
-  <p>Preparation in advance:<ol>
-   <li>Please get started by ensuring that you have reviewed the <a href="https://radiojove.gsfc.nasa.gov/telescope/soldering.htm">six 15 second soldering videos</a> and can comment on them.</li>
-   <li>Work through as much of this set of instructions as possible. Additional content yet to be incorporated into these instructions is available in the <a href="https://github.com/six0four/MicroRover">repository</a>. (Feel free to drop by my desk or through the prototype lab in J233 for additional guidance.)</li>
-  </ol></p>
-  <p>Getting started Monday morning:<ol>
-   <li>Please select a seat in J232 near one of the soldering facilitators (Kelly, Vlad, Jeremy, Brandeen, Carl, Leon, Mihyar, Muhammad, or Vincent).</li></ol>
-   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/J232station.jpg">
+  <p>Preparation in advance:
+   <ol>
+    <li>Please get started by ensuring that you have reviewed the <a href="https://radiojove.gsfc.nasa.gov/telescope/soldering.htm">six 15 second soldering videos</a> and can comment on them. (If you are into materials look up tin pest and tin whiskers.)</li>
+    <li>Work through as much of this set of instructions as possible. Additional content yet to be incorporated into these instructions is available in the <a href="https://github.com/six0four/MicroRover">repository</a>. 
+    (Feel free to drop by my desk or through the prototype lab in J233 for additional guidance.)</li>
+   </ol>
+  </p>
+  <p>Getting started Monday morning:
+   <ol>
+    <li>Please remember your eyewear (safety glasses if you don't regularly wear glasses) and select a seat in J232 near one of the soldering facilitators (Kelly, Vlad, Jeremy, Brandeen, Carl, Muhammad, or Vincent).</li>
+   </ol>
+   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.j232station.jpg">
+   <ol>
+    <li>Turn on the computer under the desk on the left side.</li>
+    <li>Note the red power switch to the back right side of the workstation that controls the power to the monitor, overhead light, and test equipment.</li>
+	<li>Also note the under desk grounding strap jack - Electronics (ELIC) students must buy the $4.99 wrist straps while both CENG and ELIC students are to have the $4.99 safety glassses.</li>
+	<li>When soldering move the extraction arm flow control towards the straight through symbol as it is in the above photo.</li>
+	<li>The sponge in the soldering station can be wetted at the sink in J232.</li>
+   </ol>
   </p>
   <p>Welcome! Our students are <a href="http://www.tcu.gov.on.ca/pepg/audiences/colleges/progstan/techno/compeng3.pdf">to reliably demonstrate the ability to</a>:
-   <ol><li>diagnose, solve, troubleshoot, and document technical problems involving computing devices using appropriate methodologies.
-   </li><li>integrate multiple software and hardware components using appropriate network architecture.
-   </li><li>participate in analyzing, planning, designing, and developing the architecture of computing devices and systems.
-   </li><li>plan, install, configure, modify, test, and maintain a variety of computer systems to meet functional requirements.
-   </li><li>apply principles of digital and analog circuits to the implementation of embedded computing devices.
-   </li><li>analyze, build, test, implement, and maintain applications.
-   </li><li>evaluate and document security issues associated with a variety of computing devices and propose alternatives to increase product reliability.
-   </li><li>articulate, defend, and conform to workplace expectations found in technology environments.
-   </li><li>contribute to the successful completion of the project applying the project management principles in use.</li></ol></p>
+   <ol>
+    <li>diagnose, solve, troubleshoot, and document technical problems involving computing devices using appropriate methodologies.</li>
+    <li>integrate multiple software and hardware components using appropriate network architecture.</li>
+    <li>participate in analyzing, planning, designing, and developing the architecture of computing devices and systems.</li>
+    <li>plan, install, configure, modify, test, and maintain a variety of computer systems to meet functional requirements.</li>
+    <li>apply principles of digital and analog circuits to the implementation of embedded computing devices.</li>
+    <li>analyze, build, test, implement, and maintain applications.</li>
+    <li>evaluate and document security issues associated with a variety of computing devices and propose alternatives to increase product reliability.</li>
+    <li>articulate, defend, and conform to workplace expectations found in technology environments.</li>
+    <li>contribute to the successful completion of the project applying the project management principles in use.</li>
+   </ol>
   </p>
-  <p>The CENG capstone project consists of:<ol>
-   <li>CENG 317 Hardware Production Technology (building a microprocessor based sensor/effector node),</li>
-   <li>CENG 319 Software Project (building a mobile application); and,</li>
-   <li>CENG 355 Computer Systems Project (integration of the work in the previous two courses):</li></ol>
-   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/PiNetworkArchitecture.jpg">
+  <p>The CENG capstone project consists of:
+   <ol>
+    <li>CENG 317 Hardware Production Technology (building a microprocessor based sensor/effector node),</li>
+    <li>CENG 319 Software Project (building a mobile application); and,</li>
+    <li>CENG 355 Computer Systems Project (integration of the work in the previous two courses):</li>
+   </ol>
+   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.pinetworkarchitecture.jpg">
   </p>
   <p>
    We will aim to make headway in a simplified project by building an independent microcontroller based sensor/effector node that could be integrated in the following way:
-   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/TrinketNetworkArchitecture.jpg">
+   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.trinketnetworkarchitecture.jpg">
    This will give us some idea of what runs connected devices all over including vehicle systems and infotainment, PLCs, our phones, Lego Mindstorms, Arduino, Raspberry Pi as well as learn about the prototyping tools available at Humber.
-   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/completedrover.jpg">
-   It will drive in a straight line until it encounters an object following which it will reverse and turn before continuing straight again. The workshop milestones are:<ol>
+   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.completedrover.jpg">
+   It will drive in a straight line until it encounters an object following which it will reverse and turn before continuing straight again. The workshop milestones are:
+   <ol>
 	<li>Kit handout.</li>
-	<li>LED blinking.</li>
-	<li>PCB soldered together.</li>
-	<li>LED blinking on lithium ion cell powered, assembled rover.</li>
-	<li>Appropriate code running the rover.</li>
+	<li>Blinking Light Emitting Diode (LED).</li>
+	<li>Soldering Printed Circuit Board (PCB) together.</li>
+	<li>Assembly of rover complete with blinking LED powered by the lithium ion cell.</li>
+	<li>Coding/uploading the appropriate program to run the rover.</li>
    </ol>
   </p>
   <p>
-   <li>Thanks to our generous students (via lost and found) you have the beginnings of a parts kit - if not, contact me.<ol>
-    <li>I will link to a number of draft videos in this workshop guide, in this case it is <a href="https://vimeo.com/100466061">a video that guides the students to purchase a parts kit at the bookstore</a>.</li>
-    <li>The first step with the parts kit is to <a href="https://vimeo.com/100450524">put your name on it and check that you have all of the parts</a>.</li>
-    <li>Our next step with the parts kit is to <a href="https://vimeo.com/104403275">confirm that our leads are functional</a>.</li>
-    <li>What we notice is that the equipment in J232 is different from <a href="https://vimeo.com/104617858">those shown in the videos</a>.</li>
-	<li>Additional electronics <a href="https://www.youtube.com/watch?v=lV39ffb82iE">background</a> from
-	 <a href="https://www.youtube.com/watch?v=2jAHT80Yw4A">Carl Oliver</a> and 
-	 <a href="https://www.youtube.com/watch?v=jaj5wuvrPvo&list=PLu1e4V7jPKeOv7V2nSRhisSu_LDnD4tSu">Peter Wheeler</a>.</li>
+   <ol>
+    <li>Thanks to our generous students (via lost and found) you have the beginnings of a parts kit - if not, contact me.
+     <ol>
+      <li>I will link to a number of draft videos in this workshop guide, in this case it is <a href="https://vimeo.com/100466061">a video that guides the students to purchase a parts kit at the bookstore</a>.</li>
+      <li>The first step with the parts kit is to <a href="https://vimeo.com/100450524">put your name on it and check that you have all of the parts</a>.</li>
+      <li>Our next step with the parts kit is to <a href="https://vimeo.com/104403275">confirm that our leads are functional</a>.</li>
+      <li>What we notice is that the equipment in J232 is different from <a href="https://vimeo.com/104617858">those shown in the videos</a>.</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.leadsopenshorted.jpg">
+	  <li>Additional electronics <a href="https://www.youtube.com/watch?v=lV39ffb82iE">background</a> from
+	   <a href="https://www.youtube.com/watch?v=2jAHT80Yw4A">Carl Oliver</a> and 
+	   <a href="https://www.youtube.com/watch?v=jaj5wuvrPvo&list=PLu1e4V7jPKeOv7V2nSRhisSu_LDnD4tSu">Peter Wheeler</a>.</li>
+	 </ol>
 	</li>
-	</ol></li>
 	<li>In your student donated parts kit find:
      <ol>
 	  <li>One resistor identification card,</li>
-	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/ResistorIDcard.jpg">
+	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.resistoridcard.jpg">
 	  <li>One 100 &#937 resistor,</li>
 	  <li>One 10 k&#937 resistor (to use to test the leads and test equipment as per the aforementioned videos),</li>
 	  <li>One 100 k&#937 resistor; and,</li>
 	  <li>A 5 cm length of solid core hookup wire.</li>
 	  <li>If any parts are missing, they can be borrowed from the parts crib and if the resistors have not been sorted, Kelly can provide laser cut and etched resistor organization cards:</li>
-	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/ResistorLaser.jpg"> 
+	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.resistorlaser.jpg"> 
 	 </ol>
     </li>
-   <li>Many of you also have a partial starter kit of parts for the workshop on May 15th to get started during the week prior to the workshop.
-   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/EarlyAdopterKit.jpg"> 
-   (e.g. Brandeen, Jeremy, Carl, Muhammad, Leon, Mihyar, Hassan, Ben, Aleks, Hussain, Raji, Satoshi, Nasim.)</li>
-   <li>The partial starter kit contains:
-    <ol>
-	 <li>One laser etched and router milled/drilled Printed Circuit Board (PCB) made at Humber,</li>
-	 <li>One laser cut chassis (1.75 minutes of cutting for the 3 pieces) made at Humber,</li>
-	 <li>Two 3D printed <a href="https://github.com/six0four/MicroRover/blob/master/mechanical/MicroRoverOringWheelRev05.stl">micro servo wheels made at Humber,</a></li>
-	 <li>One 3.7 V 350 mAh Lithium Ion Polymer 552035 Cell,</li>
-	 <li>One Trinket LiPoly Backpack Charger,</li>
-	 <li>Two BS1806-022 O-rings</li>
-	 <li>Two Micro Continuous Rotation Servos, one of which is packaged with:</li>
-	 <li>Six 36-1502-2-ND turret posts,</li>
-	 <li>One 3V Adafruit Trinket, packaged with:</li>
-	 <li>>30 cm of SN 100C 0.032” diameter lead free no clean rosin based glow core flux core of 2.5%.</li>
-	 <li>One 1080-1163-ND Side view IR phototransistor,</li>
-	 <li>One 160-1930-ND Side View IR emitter,</li>
-	 <li>One S9341-ND Shorting Jumper,</li>
-	 <li>One USB cable - A/MicroB - 3ft,</li>
-	 <li>Four H700-ND #2-56x1/4" machine screws,</li>
-	 <li>Two 2 pin pieces, one 3 pin piece, and two 5 pin pieces of S7014-ND female header - breakaway,</li>
-	 <li>One 2 pin pieces, and three 3 pin pieces of S1011EC-40-ND male header - breakaway.</li>
-	</ol>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/EarlyAdopterContents.jpg">
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/DSC_0029.JPG">
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/EarlyAdopterContents2.jpg">
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/usbcablemachinescrews.jpg">
-	<img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/lasercutting.jpg">
-	<img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/laserchassis.jpg">
+    <li>Many of you also have a partial starter kit of parts for the workshop on May 15th to get started during the week prior to the workshop.
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.earlyadopterkit.jpg"> 
+    (e.g. Brandeen, Jeremy, Carl, Muhammad, Leon, Mihyar, Hassan, Ben, Aleks, Hussain, Raji, Satoshi, Nasim.)</li>
+    <li>The partial starter kit contains:
+     <ol>
+	  <li>One laser etched and router milled/drilled Printed Circuit Board (PCB) made at Humber,</li>
+	  <li>One laser cut chassis (1.75 minutes of cutting for the 3 pieces) made at Humber,</li>
+	  <li>Two 3D printed <a href="https://github.com/six0four/MicroRover/blob/master/mechanical/MicroRoverOringWheelRev05.stl">micro servo wheels made at Humber,</a></li>
+	  <li>One 3.7 V 350 mAh Lithium Ion Polymer 552035 Cell,</li>
+	  <li>One Trinket LiPoly Backpack Charger, including its header,</li>
+	  <li>Two BS1806-022 O-rings</li>
+	  <li>Two Micro Continuous Rotation Servos, one of which is packaged with:</li>
+	  <li>Six 36-1502-2-ND turret posts,</li>
+	  <li>One 3V Adafruit Trinket, including its headers, packaged with:</li>
+	  <li>>30 cm of SN 100C 0.032” diameter lead free no clean rosin based glow core flux core of 2.5%.</li>
+	  <li>One 1080-1163-ND Side view IR phototransistor,</li>
+	  <li>One 160-1930-ND Side View IR emitter,</li>
+	  <li>One S9341-ND Shorting Jumper,</li>
+	  <li>One USB cable - A/MicroB - 3ft,</li>
+	  <li>Four H700-ND #2-56x1/4" machine screws,</li>
+	  <li>Two 2 pin pieces, one 3 pin piece, and two 5 pin pieces of S7014-ND female header - breakaway,</li>
+	  <li>One 2 pin pieces, and three 3 pin pieces of S1011EC-40-ND male header - breakaway.</li>
+	 </ol>
+     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.earlyadoptercontents.jpg">
+     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1._0029.JPG">
+     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.earlyadoptercontents2.jpg">
+     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.usbcablemachinescrews.jpg">
+	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.lasercutting.jpg">
+	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.laserchassis.jpg">
     </li>
-   </li>
-   <li>Please put on your glasses for safety as we will be soldering and using side cutters (despite this please make sure not to send to parts flying from your workspace). To solder these parts:
-    <ol>
-	 <li>Take a length of solid core hookup wire (from your student supplied parts kit) and strip two 5 cm lengths of it.</li>
-	 <li>Use pliers to create a bend as shown:</li>
-    </ol>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/wireforvias.jpg">
-	Solder those along with the resistors onto the provided PCB from both sides:
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/vias.jpg">
-	<img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/2resistorsandvias.jpg">
-	Trim the leads and then solder the sockets, note that the 2 pin sockets get soldered to the opposite side of the PCB:
-	<img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3socketsadded.jpg">
-	Next solder the headers (this photo is of a slightly different PCB but the idea is the same):
-	<img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4headersadded.jpg">
-	Next solder the terminal posts/turrets.
-	<img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/turretplacement.jpg">
-	<img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/turretsoldering.jpg">
-   </li>
-   <li>Use your USB A to USB MicroB cable to upload blink to your trinket to confirm that it works:
-    <ol>
-     <li>Log into a computer in J232. (If using your own computer download the installer from <a href="https://www.arduino.cc/en/Main/Software">arduino.cc</a>)</li>
-	 <li>Install the <a href="https://learn.adafruit.com/introducing-trinket?view=all#windows-setup">Adafruit Windows Drivers</a>.</li>
-	 <li>Follow these <a href="https://learn.adafruit.com/introducing-trinket?view=all#setting-up-with-arduino-ide">instructions</a> including the <a href="https://learn.adafruit.com/adafruit-arduino-ide-setup?view=all">integrated development environment setup</a> until your development board blinks.
-     <li>https://learn.adafruit.com/trinket-gemma-servo-control?view=all#code</li>
-	 <li>https://github.com/adafruit/Adafruit_SoftServo/archive/master.zip</li>
-	 <li>Continue to the next step.</li>
-	</ol>
-   </li>
-   <li>Soldering headers:
-    <ol>
-     <li>Solder the provided headers onto the trinket.</li>
-     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/trinketandheaders.jpg">
-     <li>Solder the provided headers onto the trinket backpack.</li>
-     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/trinketandbackpack.jpg">
-	</ol>
-   </li>
-</p>   
-</ol>
-    </SECTION>
- <SECTION ID="Section_4">
-<p>
+   </ol>
+  </p>
+ </SECTION>
+
+ <SECTION ID="Section_2">
+  <H3>Blinking LED</H3>
+  <p>
    <ol>
-   <li>Use your USB A to USB MicroB cable to upload blink to your trinket to confirm it is undamaged:
-    <ol>
-     <li>Log into a computer in J232.</li>
-     <li>Start Arduino IDE.</li>
-	 <li>Continue to the next step.</li>
-	</ol>
-   </li>
-  </ol></p>
+    <li>Use your USB A to USB MicroB cable to upload blink to your trinket to confirm that it works:
+     <ol>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/2.usbtrinket.jpg">
+      <li>Log into a computer in J232. (If you are using your own computer, download the installer from <a href="https://www.arduino.cc/en/Main/Software">arduino.cc</a>)</li>
+	  <li>Install the <a href="https://learn.adafruit.com/introducing-trinket?view=all#windows-setup">Adafruit Windows Drivers</a>.</li>
+	  <li>Follow these <a href="https://learn.adafruit.com/introducing-trinket?view=all#setting-up-with-arduino-ide">instructions</a> including the <a href="https://learn.adafruit.com/adafruit-arduino-ide-setup?view=all">integrated development environment setup</a> until your development board blinks.</li>
+      <li>My reccomendation is to always verify your code prior to uploading since you only have a 5 second window to upload (after either plugging in the USB cable or pressing the reset button) and if you have yet to verify, that step is included in the upload.</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/2.arduinoide.jpg">
+	 </ol>
+    </li>
+   </ol>
+  </p>
+ </SECTION>
+
+ <SECTION ID="Section_3">
+  <H3>Soldering PCB</H3>
+  <p>
+   <ol>
+    <li>Please put on your glasses for safety as we will be soldering and using side cutters (despite this please make sure not to send to parts flying from your workspace). To solder these parts:
+     <ol>
+	  <li>Take a length of solid core hookup wire (from your student supplied parts kit) and strip a longer section of insulation than usual.</li>
+	  <li>Use pliers to create a 90 degree bend.</li>
+	  <li>Insert the short end of the bend into one of the two spots (vias) shown that are used to transfer the signal from one side of the board to the other.</li>
+	  <li>You may make two (as shown) or use the same one twice by soldering cutting and then reinserting in the other location:
+     </ol>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.1vias.jpg">
+	 Solder these onto the provided PCB (laid out and made by Kelly and Vlad - <a href="https://github.com/six0four/MicroRover/tree/master/electronics">Eagle files and Bill of Materials</a>) from both sides then solder the resistors onto the provided PCB from both sides:
+	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.2resistorsandvias.jpg">
+	 Trim the via and resistor leads, then solder the 3 pin and 5 pin sockets:
+	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.3socketsadded.jpg">
+	 Next solder the headers (this photo is of a slightly different PCB but the idea is the same):
+	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.4headersadded.jpg">
+	 Next solder the terminal posts/turrets.
+	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.5turretplacement.jpg">
+	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.5turretsoldering.jpg">
+     Next solder the 2 pin sockets to the opposite side of the PCB as photographed by Brandeen:
+	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.6backsidesockets.jpg">
+     The IR LED (clear) will eventually be trimmed to go in the socket connected to the 100 &#937 resistor while the sensor (dark couloured) will eventually be trimmed to go into the socket connected to the 100 k&#937 resistor.
+	</li>
+    <li>Solder the provided headers onto the trinket.</li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.6trinketandheaders.jpg">
+    <li>Solder the provided headers onto the trinket backpack.</li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.7trinketandbackpack.jpg">
+   </ol>
+  </p>   
+ </SECTION>
+
+ <SECTION ID="Section_4">
+  <H3>Assembly and Blinking LED Again</H3>
+  <p>
+   <ol>
+    <li>Start by removing the film from your acrylic pieces designed by Vlad and laser cut by Kelly who photographed the assembly steps:</li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.1.jpg">
+    <li>This is what you will need for the assembly.
+	    The film has been left on to avoid issues with photographing clear objects.
+		The screwdriver shown makes it unnecessary to tap the acrylic for the machine screws but, if you would like to use it, we do have a tap such that a screwdriver that is not designed to allow for pressure with the palm of your hand can be used.</li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.2.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.3.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.4.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.5.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.6.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.7.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.8.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.9.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.10.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.11.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.12.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.13.jpg">
+    <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.14.jpg">
+   </ol>
+  </p>
+  <p>
+   <ol>
+    <li>Use your USB A to USB MicroB cable to upload blink to your trinket to confirm that it has remained undamaged through the soldering and mechanical assembly processes:
+     <ol>
+      <li>Start the Arduino IDE.</li>
+	  <li>Choose File->Examples->01.Basics->Blink</li>
+      <li>Choose verify and then press the reset button on your trinket and then quickly click upload such that it completes in your 5 second window.</li>	  
+	  <li>Continue to the next step.</li>
+	 </ol>
+    </li>
+   </ol>
+  </p>
  </SECTION>
  
  <SECTION ID="Section_5">
-   <h3>Please let me know that you have made it this far such that I can once again get ahead of you in posting instructions!</h3><p><ol><li>Following:
-https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#This_is_an_ideal_attribution
-
-"Breadboard view graphics" http://fritzing.org/faq/ by Fritzing are licensed under CC BY SA 3.0
-http://creativecommons.org/licenses/by-sa/3.0/</li>
-   
-  </ol></p>
+  <H3>Coding/Uploading appropriate code</H3>
+  <p>
+   <ol>Kelly found that the example code in the software servo library works reasonably for the Micro Rover, thus:
+    <li>Once again load the Arduino IDE and choose Sketch->Include Library->Manage Librares...<li>
+    <li>In the "Filter your search ..." field type softservo</li>
+    <li>Click on "More info" once.</li>
+	<li>Click on "Install".</li>
+    <li>Alternatively you may follow the library installation instructions discussed <a href="https://learn.adafruit.com/trinket-gemma-servo-control?view=all#code">here</a> or download and install it as a <a href="https://github.com/adafruit/Adafruit_SoftServo/archive/master.zip">.zip</a>.</li>
+    <li>Once it is installed, choose File->Examples->Adafruit SoftServo->Trinket Knob</li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/5.trinketknob.jpg">
+    <li>Choose verify and then press the reset button on your trinket and then quickly click upload such that it completes in your 5 second window.</li>
+    <li>To understand and tweak the code, discuss with your colleagues.</li>
+	<li>The repository has the <a href="https://github.com/six0four/MicroRover/blob/master/firmware/MicroRoverRev04.ino">code running on the prototype</a>.</li>
+	<li>For some programming insight, Brandeen has <a href="https://www.youtube.com/user/qmy5728/videos">youtube videos</a> including <a href="https://www.youtube.com/watch?v=ZRyeWW2j3N8">one describing a while loop</a> similar to our loop where we could consider driving forward looking for an object "Say Hello" and reversing and turning away from it "Say Goodbye".</li>
+   </ol>
+  </p>	
+  <h3>I look forward to you sharing your improved code!</h3>
+  <p>
+   <ul>
+    <li>Congratulations for completing this workshop!</li>
+   </ul>
+  </p>
  </SECTION>
 
- <SECTION ID="Section_03">
-  <H3>Micro Rover Project</H3>
-  <p><ol>
-   <li>Please visit the <a href="https://github.com/six0four/MicroRover">Micro Rover Repository</a>.</li>
-  </ol></p>
+ <SECTION ID="Section_06">
+  <H3>Micro Rover Project Repository</H3>
+  <p>
+   <ol>
+    <li>Please visit the <a href="https://github.com/six0four/MicroRover">Micro Rover Repository</a> for additional files that were used during the development of this workshop.</li>
+    <li>I do plan to eventually post electronic diagrams of the breadboarded prototype following:
+<a href="https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#This_is_an_ideal_attribution">
+https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#This_is_an_ideal_attribution</a> and using
+"Breadboard view graphics" http://fritzing.org/faq/ by Fritzing are licensed under CC BY SA 3.0
+http://creativecommons.org/licenses/by-sa/3.0/</li>
+   </ol>
+  </p>
  </SECTION>
 
  <SECTION ID="Section_101">
-  <H3>Current Projects</H3>
-  <p><ol>
-   <li>Tuesday's Projects:<ol>
-   <li><a href="https://bigbosstony.github.io/">1AmbientComputing</a></li>
-   <li><a href="https://eugenehasjeans.github.io/">1Breathalyzer</a></li>
-   <li><a href="https://saadq12.github.io/">1Industry4.0</a></li>
-   <li><a href="https://irwintr.github.io/">1Monitoring</a></li>
-   <li><a href="https://masoud647.github.io/">1PartsCrib</a>, <a href="http://munro.humber.ca/~n01040349/">site</a></li>
-   <li><a href="https://github.com/hennok129/RoboticArm">1RoboticArm</a></li>
-   <li><a href="http://github.com/Libs1/SoftwareControlledDrone.github.io/">1SoftwareControlledDrone</a></li>
-   <li><a href="https://willcodyanderson.github.io/">1SpeechBuddy</a></li>
-   <li><a href="https://semjerome.github.io/">1Telematics</a>, <a href="http://autaccreport.com/wordpresstest">site</a></li>
-   </ol></li>
-   <li>Friday's Projects:<ol>
-   <li><a href="https://khemar1.github.io">2AutoVehicle</a>, <a href="http://munro.humber.ca/~n00994056/">site</a></li>
-   <li><a href="https://StudentEng2016.github.io">2FarmBot</a></li>
-   <li><a href="https://mndk0076.github.io/">2LabFlow</a>, <a href="http://munro.humber.ca/~jhtg0006/bin/">site</a></li>
-   <li><a href="https://github.com/DanChugani">2Octoprint</a></li>
-   <li><a href="https://pwestman.github.io">2SmartHive</a></li>
-   <li><a href="https://steve-spiteri.github.io/">2Solar</a></li>
-   <li><a href="https://n01074838.github.io">2Wireless</a></li>
-   </ol></li>
-  </ol></p>
+  <H3>Winter 2017 CENG Projects</H3>
+  <p>
+   <ol>
+    <li>Tuesday's Projects:
+	 <ol>
+      <li><a href="https://bigbosstony.github.io/">1AmbientComputing</a></li>
+      <li><a href="https://eugenehasjeans.github.io/">1Breathalyzer</a></li>
+      <li><a href="https://saadq12.github.io/">1Industry4.0</a></li>
+      <li><a href="https://irwintr.github.io/">1Monitoring</a></li>
+      <li><a href="https://masoud647.github.io/">1PartsCrib</a>, <a href="http://munro.humber.ca/~n01040349/">site</a></li>
+      <li><a href="https://github.com/hennok129/RoboticArm">1RoboticArm</a></li>
+      <li><a href="http://github.com/Libs1/SoftwareControlledDrone.github.io/">1SoftwareControlledDrone</a></li>
+      <li><a href="https://willcodyanderson.github.io/">1SpeechBuddy</a></li>
+      <li><a href="https://semjerome.github.io/">1Telematics</a>, <a href="http://autaccreport.com/wordpresstest">site</a></li>
+     </ol>
+	</li>
+    <li>Friday's Projects:
+     <ol>
+      <li><a href="https://khemar1.github.io">2AutoVehicle</a>, <a href="http://munro.humber.ca/~n00994056/">site</a></li>
+      <li><a href="https://StudentEng2016.github.io">2FarmBot</a></li>
+      <li><a href="https://mndk0076.github.io/">2LabFlow</a>, <a href="http://munro.humber.ca/~jhtg0006/bin/">site</a></li>
+      <li><a href="https://github.com/DanChugani">2Octoprint</a></li>
+      <li><a href="https://pwestman.github.io">2SmartHive</a></li>
+      <li><a href="https://steve-spiteri.github.io/">2Solar</a></li>
+      <li><a href="https://n01074838.github.io">2Wireless</a></li>
+     </ol>
+	</li>
+   </ol>
+  </p>
  </SECTION>
   
  <SECTION ID="Section_31">
-  <H3>Past Projects</H3>
-  <p><ul>
+  <H3>Past CENG Projects</H3>
+  <p>
+   <ul>
     <li><a href="http://munro.humber.ca/~mdrk0011/projects/">http://munro.humber.ca/~mdrk0011/projects/</a></li>
 	<li><a href="https://github.com/JDHumphries/Delta-Laser-App">Delta-Laser-App</a></li>
 	<li><a href="https://github.com/d-mariano/DeltaControl">DeltaControl</a></li>
@@ -214,7 +317,8 @@ http://creativecommons.org/licenses/by-sa/3.0/</li>
 	<li><a href="https://github.com/rmahenthiran/Micro-Drone-Flight-Control">Micro-Drone-Flight-Control</a></li>
 	<li><a href="https://github.com/nspendik22/Hubsan-Flight-Control">Hubsan-Flight-Control</a></li>
 	<li><a href="https://github.com/Seenanfb/Solar-Panel-Interactive-Box">Solar-Panel-Interactive-Box</a></li>
-  </ul></p>
+   </ul>
+  </p>
  </SECTION>
 
 </ARTICLE>

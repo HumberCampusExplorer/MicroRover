@@ -198,42 +198,35 @@
 	   (Notice from the datasheet that the <a href="https://cdn-shop.adafruit.com/product-files/2750/LP552035_350MAH_3.7V_20150906.pdf">
 	   Discharge Cut-off is 3.0V, the Charging Cut-off is 4.2V, and the Storage Voltage is 3.7-3.85V</a>.):</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.12checkcellvoltage.jpg">
-	  <li>We can now set up the power supply with a current limit and on these power supplies, also current protection.</li>
+	  <li>We can now set up the power supply with a current limit and, on these power supplies, also current protection.</li>
 	  <li>Start by turning on the power supply:
 	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.16turnon.jpg">
-	  <li>We do not have these capabilities if we use the straight 5V output
-	  <li>Start by turning on the power supply, enabling Output 1, and setting it to 5V.
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+	  <li>We do not have our desired capabilities if we use the straight 5V output, thus enable Output 1, and set it to 5V.
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.17setsupplyvoltage.jpg">
+	  <li>Press "Display Limit" and change it to 0.8 Amps:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.18setcurrentlimit.jpg">
+	  <li>When we first enable the output, or connect the device there will be a slight surge so if we set the Over Current protection to trip at 0.13 A:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.19setovercurrent0.13.jpg">
+	  <li>It will trip when we connect our project:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20ErIP.jpg">
+	  <li>Thus we will set our over current protection at 0.5 A:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.21setovercurrent0.5.jpg">
 	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.22.jpg">
 	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.23.jpg">
 	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.24.jpg">
 	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.25.jpg">
 	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.26.jpg">
 	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.27.jpg">
 	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.11.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.28.jpg">
 	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.12.jpg">
-	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.13.jpg">
-	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.14.jpg">
-	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.15.jpg">
-	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.16.jpg">
-	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.17.jpg">
-	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.18.jpg">
-	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.19.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.29.jpg">
 	  <li></li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
 	  <li>Turn off power supply Output 1 and remove the leads as well as the lithium ion cell charger PCB.</li>

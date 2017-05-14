@@ -186,49 +186,80 @@
     </li>
     <li>Let us check out our printed circuit board assembly (following IPC-A-610 Acceptability of Electronics Assemblies if you are familiar with it) and test it using the bench top equipment:
      <ol>
-      <li>To start off, you may use the multimeter to measure the resistance between any pair of turret/terminal posts and there should be no continuity (same as no connection).</li>
+      <li>To start off, you may use the multimeter to measure the resistance between any pair of turret/terminal posts and there should be no continuity (same as no connection) since nothing is connected to the headers or sockets yet.</li>
+      <li>PLEASE NOTICE THAT YOUR BOARD MAY HAVE TURRENTS/TERMINALS IN DIFFERENT LOCATIONS - GO BY THE LABELS!</li>
+	  <li>When selecting your resistors you may have already measured them and you can confirm that now:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.9check100ohm.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.10check100kohm.jpg">
 	  <li>Next connect the backpack to the PCB:</li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.9connectbackpack.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.10.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.11.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.12.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.13.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.14.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.15.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.16.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.17.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.18.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.19.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.21.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.22.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.23.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.24.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.25.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.26.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.27.jpg">
-	  <li></li>
-    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.28.jpg">
-	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.11connectbackpack.jpg">
 	  <li>Connect the jumper across both pins to enable the battery backpack.</li>
+	  <li>Test the voltage on the 3.7 V 350 mAh Lithium Ion Polymer 552035 Cell by measuring the voltage between GND and VBAT.
+	   (Notice from the datasheet that the <a href="https://cdn-shop.adafruit.com/product-files/2750/LP552035_350MAH_3.7V_20150906.pdf">
+	   Discharge Cut-off is 3.0V, the Charging Cut-off is 4.2V, and the Storage Voltage is 3.7-3.85V</a>.):</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.12checkcellvoltage.jpg">
+	  <li>We can now set up the power supply with a current limit and on these power supplies, also current protection.</li>
+	  <li>Start by turning on the power supply:
+	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.16turnon.jpg">
+	  <li>We do not have these capabilities if we use the straight 5V output
+	  <li>Start by turning on the power supply, enabling Output 1, and setting it to 5V.
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.11.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.12.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.13.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.14.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.15.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.16.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.17.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.18.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.19.jpg">
+	  <li></li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20.jpg">
+	  <li>Turn off power supply Output 1 and remove the leads as well as the lithium ion cell charger PCB.</li>
+	  <li>Turn on the function generator and oscilloscope (using 0.5 Volts/division and 10 ms/division).</li>
+	  <li>Connect BNC (Bayonet Neill–Concelman) to alligator clip cables from both the output on the function generator and from the oscilloscope to the PCB:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.31oscfuncpcb.jpg">
+	  <li>Set the output of the function generator to 20 Hz:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.32func20hz.jpg">
+	  <li>Set the output of the function generator to 1.5 Volts peak-to-peak (these function generators expect a 50 &#937 load and thus using an almost infinite load we will actually get double the voltage.)</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.34func1.5vpp.jpg">
+	  <li>Set the output of the function generator to have a 0.75 V offset:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.35func.75offset.jpg">
+	  <li>Set the output of the function generator to have a peak of 1.5 ms:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.36func1.5ms.jpg">
+	  <li>Measure to confirm the peak-to-peak voltage, frequency, and positive pulse width:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.37measurepulse.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.39measure1.5ms.jpg">
+	  <li>At this point we can add the power supply that we set up earlier:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.38oscfuncpcbpowernojump.jpg">
+	  <li>Also add a microservo to the middle 3 pin set of headers next to the jumper between the right and left sets.</li>
+	  <li>To turn the microservo clockwise, set the function generator to have a peak of 1.5 ms:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.40func1.0ms.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.41measure1.0ms.jpg">
+	  <li>To turn the microservo counter-clockwise, set the function generator to have a peak of 2.0 ms:</li>
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.42func2.0ms.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.43measure2.0ms.jpg">
 	 </ol>
     </li>
    </ol>
@@ -301,7 +332,7 @@
   <h3>I look forward to you sharing your improved code!</h3>
   <p>
    <ul>
-    <li>Congratulations for completing this workshop!</li>
+    <li>Congratulations on completing this workshop!</li>
    </ul>
   </p>
  </SECTION>

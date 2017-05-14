@@ -8,23 +8,21 @@
   <H3>9am-12noon May 15th, 2017 Computer Engineering Technology (CENG) Prototyping Workshop in J232</H3>
   <p>Preparation in advance:
    <ol>
-    <li>Please get started by ensuring that you have reviewed the <a href="https://radiojove.gsfc.nasa.gov/telescope/soldering.htm">six 15 second soldering videos</a> and can comment on them. (If you are into materials look up tin pest and tin whiskers.)</li>
+    <li>Please get started by ensuring that you have reviewed the <a href="https://radiojove.gsfc.nasa.gov/telescope/soldering.htm">six 15 second soldering videos</a> and can comment on them. (If you are into materials, look up tin pest and tin whiskers.)</li>
     <li>Work through as much of this set of instructions as possible. Additional content yet to be incorporated into these instructions is available in the <a href="https://github.com/six0four/MicroRover">repository</a>. 
-    (Feel free to drop by my desk or through the prototype lab in J233 for additional guidance.)</li>
+    (Feel free to drop by my desk or through the prototype lab in J233 for additional guidance both before and after the workshop.)</li>
    </ol>
   </p>
   <p>Getting started Monday morning:
    <ol>
-    <li>Please remember your eyewear (safety glasses if you don't regularly wear glasses) and select a seat in J232 near one of the soldering facilitators (Kelly, Vlad, Jeremy, Brandeen, Carl, Muhammad, or Vincent).</li>
-   </ol>
-   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.j232station.jpg">
-   <ol>
+    <li>Please remember your eyewear (safety glasses if you don't regularly wear glasses) and select a seat in J232 near one of the soldering facilitators (Kelly, Vlad, Jeremy, Brandeen, Carl, Muhammad, or Vincent who are familiar with IPC J-STD-001).</li>
     <li>Turn on the computer under the desk on the left side.</li>
     <li>Note the red power switch to the back right side of the workstation that controls the power to the monitor, overhead light, and test equipment.</li>
-	<li>Also note the under desk grounding strap jack - Electronics (ELIC) students must buy the $4.99 wrist straps while both CENG and ELIC students are to have the $4.99 safety glassses.</li>
-	<li>When soldering move the extraction arm flow control towards the straight through symbol as it is in the above photo.</li>
-	<li>The sponge in the soldering station can be wetted at the sink in J232.</li>
+	<li>Also note the under desk grounding strap jack for wrist straps - Electronics (ELIC) students must buy the $4.99 wrist straps while both CENG and ELIC students are to have the $4.99 safety glassses.</li>
+	<li>When soldering move the extraction arm flow control towards the straight through symbol as it is in the photo below.</li>
+	<li>The sponge in the soldering station can be moistened at the sink in J232.</li>
    </ol>
+   <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.j232station.jpg">
   </p>
   <p>Welcome! Our students are <a href="http://www.tcu.gov.on.ca/pepg/audiences/colleges/progstan/techno/compeng3.pdf">to reliably demonstrate the ability to</a>:
    <ol>
@@ -52,9 +50,9 @@
    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.trinketnetworkarchitecture.jpg">
    This will give us some idea of what runs connected devices all over including vehicle systems and infotainment, PLCs, our phones, Lego Mindstorms, Arduino, Raspberry Pi as well as learn about the prototyping tools available at Humber.
    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.completedrover.jpg">
-   It will drive in a straight line until it encounters an object following which it will reverse and turn before continuing straight again. The workshop milestones are:
+   Based on the <a href="https://www.sparkfun.com/products/9378">ATTiny85</a> It will drive in a straight line until it encounters an object following which it will reverse and turn before continuing straight again. The workshop milestones are:
    <ol>
-	<li>Kit handout.</li>
+	<li>Kit and workstation familiarization.</li>
 	<li>Blinking Light Emitting Diode (LED).</li>
 	<li>Soldering Printed Circuit Board (PCB) together.</li>
 	<li>Assembly of rover complete with blinking LED powered by the lithium ion cell.</li>
@@ -90,9 +88,9 @@
     <li>Many of you also have a partial starter kit of parts for the workshop on May 15th to get started during the week prior to the workshop.
     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.earlyadopterkit.jpg"> 
     (e.g. Brandeen, Jeremy, Carl, Muhammad, Leon, Mihyar, Hassan, Ben, Aleks, Hussain, Raji, Satoshi, Nasim.)</li>
-    <li>The partial starter kit contains:
+    <li>The starter kit contains (please let me know if you are missing any parts):
      <ol>
-	  <li>One laser etched and router milled/drilled Printed Circuit Board (PCB) made at Humber,</li>
+	  <li>One laser etched and router milled/drilled Printed Circuit Board (PCB) made at Humber (a quick resistance meaurement should confirm power and ground traces are not connected),</li>
 	  <li>One laser cut chassis (1.75 minutes of cutting for the 3 pieces) made at Humber,</li>
 	  <li>Two 3D printed <a href="https://github.com/six0four/MicroRover/blob/master/mechanical/MicroRoverOringWheelRev05.stl">micro servo wheels made at Humber,</a></li>
 	  <li>One 3.7 V 350 mAh Lithium Ion Polymer 552035 Cell,</li>
@@ -117,6 +115,9 @@
 	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.lasercutting.jpg">
 	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.laserchassis.jpg">
     </li>
+	<li>Infrared (IR) LEDs can be viewed in the dark through most digital cameras:</li>
+	<img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.irledoff.jpg">
+	<img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/1.irledon.jpg">	 
    </ol>
   </p>
  </SECTION>
@@ -131,7 +132,7 @@
       <li>Log into a computer in J232. (If you are using your own computer, download the installer from <a href="https://www.arduino.cc/en/Main/Software">arduino.cc</a>)</li>
 	  <li>Install the <a href="https://learn.adafruit.com/introducing-trinket?view=all#windows-setup">Adafruit Windows Drivers</a>.</li>
 	  <li>Follow these <a href="https://learn.adafruit.com/introducing-trinket?view=all#setting-up-with-arduino-ide">instructions</a> including the <a href="https://learn.adafruit.com/adafruit-arduino-ide-setup?view=all">integrated development environment setup</a> until your development board blinks.</li>
-      <li>My reccomendation is to always verify your code prior to uploading since you only have a 5 second window to upload (after either plugging in the USB cable or pressing the reset button) and if you have yet to verify, that step is included in the upload.</li>
+      <li>My reccomendation is to always verify (the checkmark button) your code prior to uploading (the right arrow button) since you only have a 5 second window to upload (after either plugging in the USB cable or pressing the reset button) and if you have yet to verify, that step is included in the upload.</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/2.arduinoide.jpg">
 	 </ol>
     </li>
@@ -162,7 +163,7 @@
 	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.5turretsoldering.jpg">
      Next solder the 2 pin sockets to the opposite side of the PCB as photographed by Brandeen:
 	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.6backsidesockets.jpg">
-     The IR LED (clear) will eventually be trimmed to go in the socket connected to the 100 &#937 resistor while the sensor (dark couloured) will eventually be trimmed to go into the socket connected to the 100 k&#937 resistor.
+     The IR LED (clear) will eventually be trimmed to go in the socket connected to the 100 &#937 resistor while the IR sensor (dark couloured) will eventually be trimmed to go into the socket connected to the 100 k&#937 resistor.
 	</li>
     <li>Solder the provided headers onto the trinket.</li>
     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.6trinketandheaders.jpg">
@@ -194,11 +195,11 @@
     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.10.jpg">
     <li>Place the lithium ion cell as shown:</li>
     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.11.jpg">
-    <li>Thread the servo and cell leads through the PCB (to which the trinket and backpack are added) as shown</li>
+    <li>Thread the servo and cell leads through the PCB (to which the trinket and backpack are added along with the jumper which is ONLY ON ONE OF THE TWO PINS) as shown:</li>
     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.12.jpg">
     <li>Connect the leads as shown making sure the orientation of the servo leads is correct (yellow for signal, faded red for power, faded black for ground).</li>
     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.13.jpg">
-    <li></li>
+    <li>Tuck the cell lead in as shown:</li>
     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.14.jpg">
    </ol>
   </p>
@@ -209,7 +210,14 @@
       <li>Start the Arduino IDE.</li>
 	  <li>Choose File->Examples->01.Basics->Blink</li>
       <li>Choose verify and then press the reset button on your trinket and then quickly click upload such that it completes in your 5 second window.</li>	  
-	  <li>Continue to the next step.</li>
+	 </ol>
+    </li>
+    <li>Let us check out our printed circuit board assembly (following IPC-A-610 Acceptability of Electronics Assemblies if you are familiar with it) and test it using the bench top equipment:
+     <ol>
+      <li></li>
+    <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/4.14.jpg">
+	  <li></li>
+	  <li>Connect the jumper across both pins to enable the battery backpack.</li>
 	 </ol>
     </li>
    </ol>

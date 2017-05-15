@@ -18,7 +18,7 @@
     <li>Please remember your eyewear (safety glasses if you don't regularly wear glasses) and select a seat in J232 near one of the soldering facilitators (Kelly, Vlad, Jeremy, Brandeen, Carl, Muhammad, or Vincent who are familiar with IPC J-STD-001 Requirements for Soldered Electrical and Electronic Assemblies).</li>
     <li>Turn on the computer under the desk on the left side.</li>
     <li>Note the red power switch to the back right side of the workstation that controls the power to the monitor, overhead light, and test equipment.</li>
-	<li>Also note the under desk grounding strap jack for wrist straps - Electronics (ELIC) students must buy the $4.99 wrist straps while both CENG and ELIC students are to have the $4.99 safety glassses.</li>
+	<li>Also note the under desk grounding strap jack for wrist straps - Electronics (ELIC) students must buy the $4.99 wrist straps while both CENG and ELIC students are to have the $4.99 safety glasses.</li>
 	<li>When soldering move the extraction arm flow control towards the straight through symbol as it is in the photo below.</li>
 	<li>The sponge in the soldering station can be moistened at the sink in J232.</li>
    </ol>
@@ -90,7 +90,7 @@
     (e.g. Brandeen, Jeremy, Carl, Muhammad, Leon, Mihyar, Hassan, Ben, Aleks, Hussain, Raji, Satoshi, Nasim.)</li>
     <li>The starter kit contains (please let me know if you are missing any parts):
      <ol>
-	  <li>One laser etched and router milled/drilled Printed Circuit Board (PCB) made at Humber (a quick resistance meaurement should confirm power and ground traces are not connected),</li>
+	  <li>One laser etched and router milled/drilled Printed Circuit Board (PCB) made at Humber (a quick resistance measurement should confirm power and ground traces are not connected),</li>
 	  <li>One laser cut chassis (1.75 minutes of cutting for the 3 pieces) made at Humber,</li>
 	  <li>Two 3D printed <a href="https://github.com/six0four/MicroRover/blob/master/mechanical/MicroRoverOringWheelRev05.stl">micro servo wheels made at Humber,</a></li>
 	  <li>One 3.7 V 350 mAh Lithium Ion Polymer 552035 Cell,</li>
@@ -133,7 +133,7 @@
 	  <li>Install the <a href="https://learn.adafruit.com/introducing-trinket?view=all#windows-setup">Adafruit Windows Drivers</a>.</li>
 	  <li>Follow these <a href="https://learn.adafruit.com/introducing-trinket?view=all#setting-up-with-arduino-ide">instructions</a> including the <a href="https://learn.adafruit.com/adafruit-arduino-ide-setup?view=all">integrated development environment setup</a> until your development board blinks.</li>
 	  <li>Although you may be able to right away choose File->Examples->01.Basics->Blink, having the drivers and libraries installed will help get that code onto your device.</li>
-      <li>My reccomendation is to always verify (the checkmark button) your code prior to uploading (the right arrow button) since you only have a 5 second window to upload (after either plugging in the USB cable or pressing the reset button) and if you have yet to verify, that step is included in the upload.</li>
+      <li>My recommendation is to always verify (the checkmark button) your code prior to uploading (the right arrow button) since you only have a 5 second window to upload (after either plugging in the USB cable or pressing the reset button) and if you have yet to verify, that step is included in the upload.</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/2.arduinoide.jpg">
 	 </ol>
     </li>
@@ -164,7 +164,7 @@
 	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.5turretsoldering.jpg">
      Next solder the 2 pin sockets to the opposite side of the PCB as photographed by Brandeen:
 	 <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.6backsidesockets.jpg">
-     The IR LED (clear) will eventually be trimmed to go in the socket connected to the 100 &#937 resistor while the IR sensor (dark couloured) will eventually be trimmed to go into the socket connected to the 100 k&#937 resistor.
+     The IR LED (clear) will eventually be trimmed to go in the socket connected to the 100 &#937 resistor while the IR sensor (dark coloured) will eventually be trimmed to go into the socket connected to the 100 k&#937 resistor.
 	</li>
     <li>Solder the provided headers onto the trinket.</li>
     <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.6trinketandheaders.jpg">
@@ -186,7 +186,7 @@
     </li>
     <li>Let us check out our printed circuit board assembly (following IPC-A-610 Acceptability of Electronics Assemblies if you are familiar with it) and test it using the bench top equipment:
      <ol>
-      <li>To start off, you may use the multimeter to measure the resistance between any pair of turret/terminal posts and there should be no continuity (same as no connection) since nothing is connected to the headers or sockets yet.</li>
+      <li>To start off, you may use the multi-meter to measure the resistance between any pair of turret/terminal posts and there should be no continuity (same as no connection) since nothing is connected to the headers or sockets yet.</li>
       <li>PLEASE NOTICE THAT YOUR BOARD MAY HAVE TURRENTS/TERMINALS IN DIFFERENT LOCATIONS - GO BY THE LABELS!</li>
 	  <li>When selecting your resistors you may have already measured them and you can confirm that now:</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.9check100ohm.jpg">
@@ -216,7 +216,7 @@
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.22connected5v0.4a.jpg">
 	  <li>If you notice that the current draw is 0.04A at 5V then the IR LED is in the socket and powered but the lithium cell is not charging.</li>
 	  <li>Connect the jumper across both pins to enable the battery backpack.</li>
-	  <li>Now it should supply 0.08 A at 5 V to the charging backpack (which itself whould limit the charging current to 0.10 A - which is an acceptable charging current up until 4.2 V is reached in our case):</li>
+	  <li>Now it should supply 0.08 A at 5 V to the charging backpack (which itself would limit the charging current to 0.10 A - which is an acceptable charging current up until 4.2 V is reached in our case):</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.23connected5v0.8a.jpg">
 	  <li>Now that we have set up the current limits to allow attended direct lithium cell charging, connect the negative (black) lead to GND and the positive (red) lead to VBAT:</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.24connected4v0.8a.jpg">
@@ -249,11 +249,11 @@
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.39measure1.5ms.jpg">
 	  <li>At this point we can add the power supply that we set up earlier:</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.38oscfuncpcbpowernojump.jpg">
-	  <li>Also add a microservo to the middle 3 pin set of headers next to the jumper between the right and left sets.</li>
-	  <li>To turn the microservo clockwise, set the function generator to have a peak of 1.5 ms:</li>
+	  <li>Also add a micro servo to the middle 3 pin set of headers next to the jumper between the right and left sets.</li>
+	  <li>To turn the micro servo clockwise, set the function generator to have a peak of 1.5 ms:</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.40func1.0ms.jpg">
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.41measure1.0ms.jpg">
-	  <li>To turn the microservo counter-clockwise, set the function generator to have a peak of 2.0 ms:</li>
+	  <li>To turn the micro servo counter-clockwise, set the function generator to have a peak of 2.0 ms:</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.42func2.0ms.jpg">
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.43measure2.0ms.jpg">
 	 </ol>
@@ -312,7 +312,7 @@
   <H3>Coding/Uploading appropriate code</H3>
   <p>
    <ol>Kelly found that the example code in the software servo library works reasonably for the Micro Rover, thus:
-    <li>Once again load the Arduino IDE and choose Sketch->Include Library->Manage Librares...<li>
+    <li>Once again load the Arduino IDE and choose Sketch->Include Library->Manage Libraries...<li>
     <li>In the "Filter your search ..." field type softservo</li>
     <li>Click on "More info" once.</li>
 	<li>Click on "Install".</li>
@@ -338,7 +338,7 @@
   <p>
    <ol>
     <li>Please visit the <a href="https://github.com/six0four/MicroRover">Micro Rover Repository</a> for additional files that were used during the development of this workshop.</li>
-    <li>I do plan to eventually post electronic diagrams of the breadboarded prototype following:
+    <li>I do plan to eventually post electronic diagrams of the bread-boarded prototype following:
 <a href="https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#This_is_an_ideal_attribution">
 https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#This_is_an_ideal_attribution</a> and using
 "Breadboard view graphics" http://fritzing.org/faq/ by Fritzing are licensed under CC BY SA 3.0

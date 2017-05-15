@@ -193,11 +193,16 @@
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.10check100kohm.jpg">
 	  <li>Next connect the backpack to the PCB:</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.11connectbackpack.jpg">
-	  <li>Connect the jumper across both pins to enable the battery backpack.</li>
+	  <li>Connect the jumper across both pins to enable the battery backpack. The jumper has a couple of different purposes:
+	   <ol>
+	    <li>The most useful purpose is to use it to disconnect power from the mirco servos such that your are able to have a finished micro rover on your desk and program it without it driving away. This is also a handy way of having it when you are not using it such as when it is charging but for storage you should remove the lithium cell.</li>
+	    <li>The second purpose is that when it discoonects the power from the lithium ion cell it also alows you to directly power the rover from the VBAT turret/terminal.</li>
+	   </ol>
+	  </li>
 	  <li>Test the voltage on the 3.7 V 350 mAh Lithium Ion Polymer 552035 Cell by measuring the voltage between GND and VBAT.
 	   (Notice from the datasheet that the <a href="https://cdn-shop.adafruit.com/product-files/2750/LP552035_350MAH_3.7V_20150906.pdf">
 	   Discharge Cut-off is 3.0V, the Charging Cut-off is 4.2V, and the Storage Voltage is 3.7-3.85V</a>.):</li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.12checkcellvoltage.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.12gndvbatcheckcellvoltage.jpg">
 	  <li>We can now set up the power supply with a current limit and, on these power supplies, also current protection.</li>
 	  <li>Start by turning on the power supply:</li>
 	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.16turnon.jpg">
@@ -211,17 +216,19 @@
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.20ErIP.jpg">
 	  <li>Thus we will set our over current protection at 0.5 A:</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.21setovercurrent0.5.jpg">
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.21setovercurrentdone.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.21overcurrentdone.jpg">
 	  <li>We can now connect the negative (black) lead to GND and the positive (red) lead to VUSB:</li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.22connected5v0.4a.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.22gndvbat5v0.4a.jpg">
 	  <li>If you notice that the current draw is 0.04A at 5V then the IR LED is in the socket and powered but the lithium cell is not charging.</li>
 	  <li>Connect the jumper across both pins to enable the battery backpack.</li>
-	  <li>Now it should supply 0.08 A at 5 V to the charging backpack (which itself would limit the charging current to 0.10 A - which is an acceptable charging current up until 4.2 V is reached in our case):</li>
+	  	  <li>Now it should supply 0.08 A at 5 V to the charging backpack (which itself would limit the charging current to 0.10 A - which is an acceptable charging current up until 4.2 V is reached in our case):</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.23connected5v0.8a.jpg">
-	  <li>Now that we have set up the current limits to allow attended direct lithium cell charging, connect the negative (black) lead to GND and the positive (red) lead to VBAT:</li>
+	  <li>If you did not set the current limit properly, the charging packpack will save you and you will notice that it limits the charging current to 0.01 A:</li>
+	  <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.23constantv0.1abackpacklimited.jpg">
+	  <li>If you did set up the current limits to allow attended direct lithium cell charging properly, connect the negative (black) lead to GND and the positive (red) lead to VBAT:</li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.24connected4v0.8a.jpg">
 	  <li></li>
-      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.25gndvbat.jpg">
+      <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.22gndvbat5v0.4a.jpg">
 	  <li></li>
       <img src="https://raw.githubusercontent.com/six0four/MicroRover/master/images/3.25gndvbat0.14a.jpg">
 	  <li></li>
